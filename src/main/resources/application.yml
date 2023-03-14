@@ -1,9 +1,9 @@
 spring:
   datasource:
-    url: jdbc:h2:tcp://localhost/~/jpasho
+    url: jdbc:h2:tcp://localhost/~/jpashop;MVCC=TRUE  # MVCC=TRUE 여러게가 접근했을 때 더 빠르다
     username: sa
-      password:
-      driver-class-name: org.h2.Driver
+    password:
+    driver-class-name: org.h2.Driver
 
   jpa:
     hibernate:
